@@ -59,6 +59,7 @@ body {
     border: none;
     margin-right: 28px;
     cursor: pointer;
+    outline: none;
 }
 .menu-line {
     display: block;
@@ -195,31 +196,31 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    columns: #19202C;
+    color: #19202C;
     font-weight: bold;
     font-size: 26px;
     line-height: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .recommended-video-title {
     display: flex;
     align-items: center;
     text-decoration: none;
-    columns: #19202C;
+    color: #19202C;
     font-weight: bold;
     font-size: 26px;
     line-height: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .recommended-channel-title {
     display: flex;
     align-items: center;
     text-decoration: none;
-    columns: #19202C;
+    color: #19202C;
     font-weight: bold;
     font-size: 26px;
     line-height: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .channel-avatar {
     height: 50px;
@@ -231,7 +232,35 @@ body {
     width: 50px;
     border-radius: 50%;
 }
+/*.button-sub {
+    background: #FF0000;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    width: 154px;
+    height: 40px;
+    margin-right: 30px;
+}
+.button-sub:active {
+    background:#aaa;
+}*/
+.button-sub {
+    width: 154px;
+    margin-right: 30px;
+}
+.checkbutton-sub {
+    display: none;
+}
+
 .channel-text {
+    margin-left: 20px;
+}
+.recommended-channel-text {
     margin-left: 20px;
 }
 .chenel-slider {
@@ -306,6 +335,17 @@ body {
     color: #19202C;
     margin-top: 10px;
     margin-bottom: 4px;
+}
+.recommended-channel-date {
+    margin-left: 19px;
+    display: flex;
+    justify-content: space-between;
+    color: #C2C2C2;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: -7px;
+    cursor: default;
 }
 .video-info {
     display: flex;
@@ -382,14 +422,45 @@ body {
 }
 .recommended-channel-slider-buttons {
     position: relative;
-    right: -1350px;
+    right: -1150px;
     top: -30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 66px;
+    width: 260px;
 }
 .recommended-channel-button {
     outline: none;
     cursor: pointer;
 }
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+
+  }
+
+  /* The slider */
+  .slider {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    
+
+    background: #FF0000;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+    width: 154px;
+    height: 40px;
+  }
+  
+  input:checked + .slider {
+    background-color: #aaa;
+  }
